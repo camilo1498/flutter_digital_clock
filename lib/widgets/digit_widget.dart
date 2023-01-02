@@ -2,11 +2,11 @@ import 'package:animations/core/numbers.dart';
 import 'package:animations/core/sizes.dart';
 import 'package:flutter/material.dart';
 
-class Digit extends StatelessWidget {
+class DigitWidget extends StatelessWidget {
   final BoxShape boxShape;
   final Color color;
   final String number;
-  const Digit({
+  const DigitWidget({
     Key? key,
     required this.number,
     this.color = Colors.white,

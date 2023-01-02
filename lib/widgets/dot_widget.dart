@@ -1,12 +1,11 @@
-import 'package:animations/widgets/box.dart';
 import 'package:animations/core/sizes.dart';
 import 'package:flutter/material.dart';
 
-class AB extends StatelessWidget {
+class DotWidget extends StatelessWidget {
   final Offset center;
   final BoxShape boxShape;
   final Color color;
-  const AB({
+  const DotWidget({
     Key? key,
     required this.center,
     this.color = Colors.white,
@@ -26,9 +25,17 @@ class AB extends StatelessWidget {
           width: Sizes.boxSize,
           height: Sizes.boxSize
       ),
-      child: Box(
-        color: color,
-        boxShape: boxShape,
+      child: SizedBox.square(
+        dimension: Sizes.boxSize,
+        child: Padding(
+          padding: const EdgeInsets.all(1),
+          child: Container(
+            decoration: BoxDecoration(
+                color: color,
+                shape: boxShape
+            ),
+          ),
+        ),
       ),
     );
   }

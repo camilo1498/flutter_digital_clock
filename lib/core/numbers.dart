@@ -1,55 +1,55 @@
 import 'dart:ui';
 
-import 'package:animations/widgets/ab.dart';
+import 'package:animations/widgets/dot_widget.dart';
 import 'package:animations/core/sizes.dart';
 import 'package:flutter/cupertino.dart';
 
 class Numbers {
 
-  static List<AB> zero ({required Color color, required BoxShape boxShape}) {
+  static List<DotWidget> zero ({required Color color, required BoxShape boxShape}) {
     return  [
       for(int i = 0; i <= 2; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(Sizes.boxSize * 2 + ( i * Sizes.boxSize),0),
         ),
 
-      AB(
+      DotWidget(
           boxShape: boxShape,
           color: color,center: const Offset(Sizes.boxSize, Sizes.boxSize)
       ),
 
       for(int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
             boxShape: boxShape,
             color: color,
             center: Offset(Sizes.boxSize * 4 + (i * Sizes.boxSize), Sizes.boxSize)
         ),
 
       for(int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
             boxShape: boxShape,
             color: color,
             center: Offset((i * Sizes.boxSize), Sizes.boxSize * 2)
         ),
 
       for(int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
             boxShape: boxShape,
             color: color,
             center: Offset(Sizes.boxSize * 4.8 + (i * Sizes.boxSize), Sizes.boxSize * 2)
         ),
 
       for(int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
             boxShape: boxShape,
             color: color,
             center: Offset((i * Sizes.boxSize), Sizes.boxSize * 2 + (1 * Sizes.boxSize))
         ),
 
       for(int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
             boxShape: boxShape,
             color: color,
             center: Offset(
@@ -58,10 +58,10 @@ class Numbers {
         ),
 
       for(int i = 0; i <= 1; i++)
-        AB(center: Offset((i * Sizes.boxSize), Sizes.boxSize * 2 + (2 * Sizes.boxSize))),
+        DotWidget(center: Offset((i * Sizes.boxSize), Sizes.boxSize * 2 + (2 * Sizes.boxSize))),
 
       for(int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
             boxShape: boxShape,
             color: color,
             center: Offset(
@@ -70,21 +70,21 @@ class Numbers {
         ),
 
       for(int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
             boxShape: boxShape,
             color: color,
             center: Offset(Sizes.boxSize + ( i * Sizes.boxSize),
                 Sizes.boxSize * 5)
         ),
 
-      AB(
+      DotWidget(
           boxShape: boxShape,
           color: color,
           center: const Offset(Sizes.boxSize * 4.8, Sizes.boxSize * 5)
       ),
 
       for(int i = 0; i <= 2; i++)
-        AB(
+        DotWidget(
             boxShape: boxShape,
             color: color,
             center: Offset(Sizes.boxSize * 2 + ( i * Sizes.boxSize), Sizes.digitSize - Sizes.boxSize)
@@ -92,10 +92,10 @@ class Numbers {
     ];
   }
 
-  static List<AB> one({required Color color, required BoxShape boxShape}) {
+  static List<DotWidget> one({required Color color, required BoxShape boxShape}) {
     return [
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -103,13 +103,13 @@ class Numbers {
             0,
           ),
         ),
-      AB(
+      DotWidget(
           boxShape: boxShape,
           color: color,
           center: const Offset(Sizes.boxSize * 2, Sizes.boxSize)
       ),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -118,7 +118,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -127,7 +127,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -136,7 +136,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -145,7 +145,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -154,7 +154,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 5; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -165,10 +165,10 @@ class Numbers {
     ];
   }
 
-  static List<AB> two ({required Color color, required BoxShape boxShape}) {
+  static List<DotWidget> two ({required Color color, required BoxShape boxShape}) {
     return  [
       for (int i = 0; i <= 4; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -177,13 +177,13 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
             boxShape: boxShape,
             color: color,
             center: Offset((i * Sizes.boxSize), Sizes.boxSize)
         ),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -192,7 +192,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 2; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -201,7 +201,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 3; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -210,7 +210,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 3; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -219,7 +219,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 2; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -228,7 +228,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 6; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -239,10 +239,10 @@ class Numbers {
     ];
   }
 
-  static List<AB> three ({required Color color, required BoxShape boxShape}) {
+  static List<DotWidget> three ({required Color color, required BoxShape boxShape}) {
     return [
       for (int i = 0; i <= 5; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -251,13 +251,13 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
             boxShape: boxShape,
             color: color,
             center: Offset(
                 Sizes.boxSize * 4 + (i * Sizes.boxSize), Sizes.boxSize)),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -266,7 +266,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 3; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -275,7 +275,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -284,7 +284,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -293,7 +293,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -302,7 +302,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 4; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -313,10 +313,10 @@ class Numbers {
     ];
   }
 
-  static List<AB> four({required Color color, required BoxShape boxShape}) {
+  static List<DotWidget> four({required Color color, required BoxShape boxShape}) {
     return [
       for (int i = 0; i <= 2; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -325,7 +325,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 3; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -334,7 +334,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -343,7 +343,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -352,7 +352,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -361,7 +361,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -370,7 +370,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 6; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -379,7 +379,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -388,7 +388,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -399,10 +399,10 @@ class Numbers {
     ];
   }
 
-  static List<AB> five({required Color color, required BoxShape boxShape}) {
+  static List<DotWidget> five({required Color color, required BoxShape boxShape}) {
     return [
       for (int i = 0; i <= 5; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -411,7 +411,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -420,7 +420,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 5; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -429,7 +429,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -438,7 +438,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -447,7 +447,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -456,7 +456,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -465,7 +465,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 4; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -476,10 +476,10 @@ class Numbers {
     ];
   }
 
-  static List<AB> six({required Color color, required BoxShape boxShape}) {
+  static List<DotWidget> six({required Color color, required BoxShape boxShape}) {
     return  [
       for (int i = 0; i <= 3; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -488,7 +488,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -497,7 +497,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -506,7 +506,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 5; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -515,7 +515,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -524,7 +524,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -533,7 +533,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -542,7 +542,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -551,7 +551,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 4; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -562,10 +562,10 @@ class Numbers {
     ];
   }
 
-  static List<AB> seven({required Color color, required BoxShape boxShape}) {
+  static List<DotWidget> seven({required Color color, required BoxShape boxShape}) {
     return [
       for (int i = 0; i <= 6; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -574,7 +574,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -583,7 +583,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -592,7 +592,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -601,7 +601,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -610,7 +610,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -619,7 +619,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -628,7 +628,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -639,10 +639,10 @@ class Numbers {
     ];
   }
 
-  static List<AB> eight({required Color color, required BoxShape boxShape}) {
+  static List<DotWidget> eight({required Color color, required BoxShape boxShape}) {
     return [
       for (int i = 0; i <= 3; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -651,7 +651,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -659,9 +659,9 @@ class Numbers {
             Sizes.boxSize,
           ),
         ),
-      const AB(center: Offset(Sizes.boxSize * 5, Sizes.boxSize)),
+      const DotWidget(center: Offset(Sizes.boxSize * 5, Sizes.boxSize)),
       for (int i = 0; i <= 2; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -669,13 +669,13 @@ class Numbers {
             Sizes.boxSize * 2,
           ),
         ),
-      AB(
+      DotWidget(
           boxShape: boxShape,
           color: color,
           center: const Offset(Sizes.boxSize * 5, Sizes.boxSize * 2)
       ),
       for (int i = 0; i <= 3; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -683,13 +683,13 @@ class Numbers {
             Sizes.boxSize * 3,
           ),
         ),
-      AB(
+      DotWidget(
           boxShape: boxShape,
           color: color,
           center: const Offset(0, Sizes.boxSize * 4)
       ),
       for (int i = 0; i <= 3; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -697,13 +697,13 @@ class Numbers {
             Sizes.boxSize * 4,
           ),
         ),
-      AB(
+      DotWidget(
           boxShape: boxShape,
           color: color,
           center: const Offset(0, Sizes.boxSize * 5)
       ),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -712,7 +712,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 4; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -723,10 +723,10 @@ class Numbers {
     ];
   }
 
-  static List<AB> nine({required Color color, required BoxShape boxShape}) {
+  static List<DotWidget> nine({required Color color, required BoxShape boxShape}) {
     return [
       for (int i = 0; i <= 4; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -735,7 +735,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -744,7 +744,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -753,7 +753,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -762,7 +762,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -771,7 +771,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 5; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -780,7 +780,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -789,7 +789,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 1; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(
@@ -798,7 +798,7 @@ class Numbers {
           ),
         ),
       for (int i = 0; i <= 3; i++)
-        AB(
+        DotWidget(
           boxShape: boxShape,
           color: color,
           center: Offset(

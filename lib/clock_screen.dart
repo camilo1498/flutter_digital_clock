@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:animations/widgets/digit.dart';
+import 'package:animations/widgets/digit_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
@@ -52,27 +52,27 @@ class _ClockScreenState extends State<ClockScreen> {
           child: Row(
             children: [
               const Spacer(),
-              Digit(number: hour1),
+              DigitWidget(number: hour1),
               const SizedBox.square(dimension: 10),
-              Digit(number: hour2),
+              DigitWidget(number: hour2),
               Text(
                 ":",
                 style: Theme.of(context).textTheme.displaySmall?.copyWith(
                   color: Colors.white,
                 ),
               ),
-              Digit(number: minute1),
+              DigitWidget(number: minute1),
               const SizedBox.square(dimension: 10),
-              Digit(number: minute2),
+              DigitWidget(number: minute2),
               Text(
                 ":",
                 style: Theme.of(context).textTheme.displaySmall?.copyWith(
                   color: Colors.white,
                 ),
               ),
-              Digit(number: second1),
+              DigitWidget(number: second1),
               const SizedBox.square(dimension: 10),
-              Digit(number: second2),
+              DigitWidget(number: second2),
               const Spacer(),
             ],
           ),
