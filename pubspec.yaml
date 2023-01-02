@@ -13,7 +13,6 @@ dependencies:
     sdk: flutter
 
   flutter_screenutil: ^5.5.2
-  google_fonts:
   intl:
 
 dev_dependencies:
